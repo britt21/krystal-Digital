@@ -1,0 +1,13 @@
+
+
+class BlogService{
+
+  getBlogs(){
+
+  }
+
+
+  getSingleBlog(){
+
+  }
+}

@@ -3,10 +3,11 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
 import 'package:blurry_modal_progress_hud/blurry_modal_progress_hud.dart';
 import 'package:krystal_digital/home/profile_image.dart';
-import 'package:krystal_digital/utils/build_card.dart';
-import 'package:krystal_digital/utils/utils.dart';
-import '../utils/text_field.dart';
-
+import 'package:krystal_digital/utils/widget/blog_items.dart';
+import 'package:krystal_digital/utils/widget/build_card.dart';
+import 'package:krystal_digital/utils/widget/utils.dart';
+import '../utils/widget/text_field.dart';
+import 'package:share_plus/share_plus.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -17,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   bool _isLoading = true;
 
   List tabs = <Widget>[];
+  List blogs = <Widget>[];
 
   @override
   void initState() {
@@ -27,6 +29,35 @@ class _HomeScreenState extends State<HomeScreen> {
     tabs.add(buildCard("Bitcoin", false));
     tabs.add(buildCard("Tech", false));
 
+    blogs.add(blog_item("Peter obi wins 2023 Presidential Election reaching us form Arise News",
+        "they are or do repels provide blacked out except the option criticize",
+            () {
+      print("BLACKBOB");
+    }, (){
+      Share.share("they are or do repels provide blacked out except the option criticize");
+    }));
+    blogs.add(blog_item("Peter obi wins 2023 Presidential Election reaching us form Arise News",
+        "they are or do repels provide blacked out except the option criticize",
+            () {
+      print("BLACKBOB");
+    }, (){
+      Share.share("they are or do repels provide blacked out except the option criticize");
+    }));
+
+    blogs.add(blog_item("Peter obi wins 2023 Presidential Election reaching us form Arise News",
+        "they are or do repels provide blacked out except the option criticize",
+            () {
+      print("BLACKBOB");
+    }, (){
+      Share.share("they are or do repels provide blacked out except the option criticize");
+    }));
+    blogs.add(blog_item("Peter obi wins 2023 Presidential Election reaching us form Arise News",
+        "they are or do repels provide blacked out except the option criticize",
+            () {
+      print("BLACKBOB");
+    }, (){
+      Share.share("they are or do repels provide blacked out except the option criticize");
+    }));
 
     Future.delayed(Duration(milliseconds: 1500), () {
       setState(() {
@@ -55,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-                Text(
+                const Text(
                   "Welcome, ",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -106,95 +137,30 @@ class _HomeScreenState extends State<HomeScreen> {
               width: 100,
               height: 70,
               child: Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: tabs.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    return GestureDetector(
-                    onTap: (){
-                      print("${tabs[index]}");
-                      },
-                    child:  tabs[index]
-                    );
-                  },
-                )
+                  padding: const EdgeInsets.all(10.0),
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: tabs.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      return GestureDetector(
+                          onTap: () {
+                            print("${tabs[index]}");
+                          },
+                          child: tabs[index]);
+                    },
+                  )),
+            ),
+            Container(
+              width: 300,
+              height: 550,
+              child: ListView.builder(
+                scrollDirection: Axis.vertical,
+                itemCount: blogs.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return blogs[index];
+                },
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 15.0,left: 15,right: 15),
-              child: Container(
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Text(
-                            "Peter obi wins 2023 Presidential Election reaching us form Arise News",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontFamily: "Poppins",
-                            ),
-                            overflow: TextOverflow.visible,
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 12,),
-                    Expanded(
-                      child: Text(
-                        "they are or do repels provide blacked out except the option criticize",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w400
-                        ),
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                      ),
-                    ),
-
-                  ],
-                ),
-                height: 150,
-                width: MediaQuery.of(context).size.width,
-              ),
-            ),
-     Padding(
-              padding: const EdgeInsets.only(top: 15.0,left: 15,right: 15),
-              child: Container(
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Text(
-                            "Peter obi wins 2023 Presidential Election reaching us form Arise News",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontFamily: "Poppins",
-                            ),
-                            overflow: TextOverflow.visible,
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 12,),
-                    Expanded(
-                      child: Text(
-                        "they are or do repels provide blacked out except the option criticize",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w400
-                        ),
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                      ),
-                    ),
-
-                  ],
-                ),
-                height: 150,
-                width: MediaQuery.of(context).size.width,
-              ),
-            )
 
           ],
         ),
