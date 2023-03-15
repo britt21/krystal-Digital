@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:krystal_digital/home/views/details.dart';
 
 import '../../home/model/BlogModel.dart';
 
@@ -36,8 +39,7 @@ Widget searchSuggestBox(List<BlogModel> blogmodel){
         child: ListTile(
           title: GestureDetector(
             onTap: (){
-
-
+              Get.to(Details(title: blogmodel[index].title, body: blogmodel[index].body));
             },
             child: Text(
               "${blogmodel[index].title}",style: TextStyle(color: Colors.black,
