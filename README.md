@@ -4,19 +4,38 @@ A new Flutter project.
 
 ## Getting Started
 
-how to install: 
-apk can be found on the root folder of this project under the "android folder"
-dependencies used:
+### how to install: 
+apk can be found on the root folder of this project under the "android directory"
+for IOS an IPA file can be pushed to testflight if requested send an email to "brittugu8@gmal.com"
+
+## dependencies used:
+get:
+for storage and navigation
+
+
+flutter_spinkit:
+for loading
+
+
+blurry_modal_progress_hud: ^1.0.3
+used for blurry loading when data isnt loaded completly
+
+http:
+for network calls
+
+
+get_storage: ^2.0.3
+for local cache
+
+share_plus: ^6.3.1
+for share function 
+
+## Ui design was fully created by me following  Flutter's material design guidelines
+## responsiveness tested via Screen Rotation landscape mode(orientation change) big and smaller phone screens completly tested
+### Due to the short time frome (24hours) bookmark functionalities was not implemented
 
 
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
