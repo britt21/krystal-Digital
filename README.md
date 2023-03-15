@@ -1,5 +1,10 @@
 # krystal_digital
 
+## App ScreenShot 
+![Screenshot_20230315-165111](https://user-images.githubusercontent.com/82580142/225366691-d60e51c8-1c87-413b-8471-8f34740648e7.png)
+![Screenshot_20230315-165116](https://user-images.githubusercontent.com/82580142/225366962-a71de049-4def-4a55-8192-1d379b2cdb7a.png)
+![Screenshot_20230315-165019](https://user-images.githubusercontent.com/82580142/225367104-2debf23c-2741-4b0f-8e85-226d2e12cc6e.png)
+
 A new Flutter project.
 
 ## Getting Started
