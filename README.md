@@ -4,6 +4,8 @@ A new Flutter project.
 
 ## Getting Started
 
+## clone Production branch to getstarted
+
 ## Downloadable apk can be found at
 https://drive.google.com/file/d/1zGngiDXozlUNENHfDbuYKB9LbxPcpBMT/view?usp=share_link
 
