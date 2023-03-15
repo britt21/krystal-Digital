@@ -31,7 +31,7 @@ share_plus: ^6.3.1
 for share function 
 
 ## Ui design was fully created by me following  Flutter's material design guidelines
-## responsiveness tested via Screen Rotation landscape mode(orientation change) big and smaller phone screens completly tested
+## responsiveness tested via Screen Rotation landscape mode(orientation change) big and smaller phone screens completly tested 
 ### Due to the short time frome (24hours) bookmark functionalities was not implemented
 
 

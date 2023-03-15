@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.krystal_digital">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="krystal_digital"
         android:name="${applicationName}"
