@@ -14,7 +14,6 @@ Widget blog_item(title, body, VoidCallback Onclickbookmark,OnclickShare) {
               Expanded(
                 child: Text(
                   title,
-                  // "Peter obi wins 2023 Presidential Election reaching us form Arise News",
                   style: TextStyle(
                     color:  Colors.black,
                     fontSize: 20,
@@ -26,11 +25,13 @@ Widget blog_item(title, body, VoidCallback Onclickbookmark,OnclickShare) {
             ],
           ),
 
+
+
           Row(
             children: [
               Expanded(
                 child: Text(
-                  "they are or do repels provide blacked out except the option criticize",
+                  body,
                   style: TextStyle(fontWeight: FontWeight.w400,color: Colors.black),
                   overflow: TextOverflow.ellipsis,
                   maxLines: 1,
@@ -44,11 +45,9 @@ Widget blog_item(title, body, VoidCallback Onclickbookmark,OnclickShare) {
                   onPressed: OnclickShare,
                   icon: Icon(Icons.share))
             ],
-          )
+          ),
         ],
       ),
-      height: 170,
-      width: 500,
     ),
   );
 }

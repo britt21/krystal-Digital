@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 
+var appPurple = Color(0xFFB388FF);
 
 class AppThemes {
 

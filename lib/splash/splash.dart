@@ -6,6 +6,8 @@ import 'package:get/get.dart';
 import 'package:krystal_digital/home/home.dart';
 import 'package:krystal_digital/login/login.dart';
 
+import '../utils/theme.dart';
+
 class SplashScreen extends StatefulWidget {
 
   @override
@@ -29,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SpinKitDualRing(
-          color: Colors.deepPurpleAccent.shade100, // Set the color of the loading spinner to purple
+          color: appPurple, // Set the color of the loading spinner to purple
           size: 100.0, // Set the size of the loading spinner
     ),
           SizedBox(height: 20,),

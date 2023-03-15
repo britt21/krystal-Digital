@@ -6,6 +6,7 @@ import 'package:flutter/foundation.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:http/http.dart' as http;
 
+import '../../utils/widget/dialog_helper.dart';
 import 'base_printer.dart';
 import 'exceptions.dart';
 
