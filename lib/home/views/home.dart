@@ -51,11 +51,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future getblogList() async {
     var bloglist = await blogController.getAlBlogs();
-    print("BANANA: ${bloglist}");
     if (bloglist.isNotEmpty) {
       setState(() {
         allblogs = bloglist;
-        print("blogsgo!! ${allblogs}");
       });
     }
   }

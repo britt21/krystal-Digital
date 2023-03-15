@@ -58,19 +58,13 @@ class _DetailsState extends State<Details> {
               ),
 
               Container(
-                height: 400,
-                  width: MediaQuery.of(context).size.width,
-                  child: ListView(
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.all(15.0),
-                          child: Text(widget.body,style: TextStyle(
-                              fontSize: 18,color: Colors.black
-                          ),),
-                        ),
-                      )
-                    ],
+                  child: Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Text(widget.body,style: TextStyle(
+                          fontSize: 18,color: Colors.black
+                      ),),
+                    ),
                   ))
     ],
       )
