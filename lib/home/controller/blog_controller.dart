@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:get/state_manager.dart';
 import 'package:get/utils.dart';
 import 'package:krystal_digital/home/service/blog_service.dart';
@@ -8,7 +10,6 @@ import '../model/BlogModel.dart';
 
 class BlogController {
 
-  BaseClient _baseClient = BaseClient();
   var isLoading = false.obs;
   var errorMessage = ''.obs;
   BlogService _blogService = BlogService();
@@ -25,10 +26,8 @@ class BlogController {
       print("HELLOBLOGS: ${blogList}");
       return blogList;
     } catch (e) {
+      showSnackBar(content: "No Internet Connection");
       isLoading.value = false;
-      errorMessage.value = handleErrorMessage(e);
-      handleError(e);
-
       throw e;
     }
   }
