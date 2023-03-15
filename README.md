@@ -11,7 +11,7 @@ https://drive.google.com/file/d/1zGngiDXozlUNENHfDbuYKB9LbxPcpBMT/view?usp=share
 
 
 ### how to install: 
-apk can be found on the root folder of this project under the "android directory"
+apk can be found in the downloadable link above for issues and query contact me
 for IOS an IPA file can be pushed to testflight if requested send an email to "brittugu8@gmal.com"
 
 ## dependencies used:
