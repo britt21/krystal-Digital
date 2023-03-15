@@ -26,7 +26,6 @@ class DialogHelper {
                 ),
               ),
               SizedBox(
-                height: 200,
                 width: 50,
                 child: CustomSvg(
                   assetName:'assets/svg/error.svg',

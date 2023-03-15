@@ -4,6 +4,12 @@ A new Flutter project.
 
 ## Getting Started
 
+how to install: 
+apk can be found on the root folder of this project under the "android folder"
+dependencies used:
+
+
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
