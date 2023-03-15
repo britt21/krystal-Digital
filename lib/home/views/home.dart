@@ -5,12 +5,13 @@ import 'package:blurry_modal_progress_hud/blurry_modal_progress_hud.dart';
 import 'package:krystal_digital/home/controller/blog_controller.dart';
 import 'package:krystal_digital/home/model/BlogModel.dart';
 import 'package:krystal_digital/home/profile_image.dart';
+import 'package:krystal_digital/home/views/details.dart';
 import 'package:krystal_digital/utils/widget/blog_items.dart';
 import 'package:krystal_digital/utils/widget/build_card.dart';
 import 'package:krystal_digital/utils/widget/utils.dart';
-import '../utils/theme.dart';
-import '../utils/widget/search_box.dart';
-import '../utils/widget/text_field.dart';
+import '../../utils/theme.dart';
+import '../../utils/widget/search_box.dart';
+import '../../utils/widget/text_field.dart';
 import 'package:share_plus/share_plus.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -167,6 +168,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         print("HAPPYBLOGS ${allblogs}}");
                         return GestureDetector(
                           onTap: () {
+                            Get.to(Details(title: allblogs[index].title,body: allblogs[index].body,));
                             print("BACKBLOG ${allblogs[index].id}");
                           },
                           child: blog_item(allblogs[index].title,
